@@ -1,3 +1,4 @@
+"use strict"
 // Husk fra dag 1: skriv "use strict" herunder
 
 
@@ -9,7 +10,12 @@ const getWordElem = document.getElementById("word");
 getWordElem.addEventListener("click", function() {
 
     // Skriv if/else-strukturen selv herinde, ligesom i de tidligere opgaver.
-    //
+    if(this.textContent === `Det ta'r kun 5 minutter`) {
+        this.innerHTML  = `<strong>og så er du i Netto.</strong>`;
+
+    }  else{
+        this.innerHTML = `Det ta'r kun 5 minutter`;
+    }
     // Nyt i dag: this.innerHTML kan indsætte HTML-kode (fx <strong>...</strong>),
     // hvor this.textContent kun kan indsætte ren tekst.
     //
